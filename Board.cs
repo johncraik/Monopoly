@@ -9,8 +9,8 @@ namespace MonopolyApp
     internal class Board
     {
         /*Class Attributes:
-         *  active  {bool}      Used to determine whether the board is being used or not.
-         *  players {Player[]}  List of players currently using the board.
+         *  active  {bool}          Used to determine whether the board is being used or not.
+         *  players {List<Player>}  List of players currently using the board.
         */
         private bool active = false;
         private List<Player> players = new List<Player>();
@@ -34,7 +34,7 @@ namespace MonopolyApp
         /// <returns></returns>
         public List<Player> GetPlayers()
         {
-            return players;
+            return this.players;
         }
 
 
