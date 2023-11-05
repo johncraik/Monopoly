@@ -16,6 +16,19 @@ namespace MonopolyApp
         private List<Player> players = new List<Player>();
 
 
+        //Constructor:
+        /// <summary>
+        /// Create a new instance of the Board.
+        /// </summary>
+        /// <param name="active">The active state of the Board. Set to true for starting a new game.</param>
+        /// <param name="players">List of Players in the game using the Board.</param>
+        public Board(bool active, List<Player> players)
+        {
+            this.active = active;
+            this.players = players;
+        }
+
+
         //Get Methods:
         //--------------
 

@@ -20,6 +20,23 @@ namespace MonopolyApp
         private List<Properties> owned = new List<Properties>();
 
 
+        //Constructor:
+        /// <summary>
+        /// Construct a new instance of Player.
+        /// </summary>
+        /// <param name="name">The name of the Player.</param>
+        /// <param name="item">The Player's item on the board.</param>
+        /// <param name="money">The amount of money the Player starts with.</param>
+        /// <param name="owned">List of Properties owned by the Player.</param>
+        public Player(string name, PlayerItem? item, int money, List<Properties> owned)
+        {
+            this.name = name;
+            this.item = item;
+            this.money = money;
+            this.owned = owned;
+        }
+
+
         //Get Methods:
         //--------------
 
