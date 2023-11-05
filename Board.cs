@@ -27,6 +27,7 @@ namespace MonopolyApp
             this.active = active;
             this.players = players;
         }
+        public Board() { }
 
 
         //Get Methods:
