@@ -28,5 +28,37 @@ namespace MonopolyApp
         {
             this.board = board;
         }
+
+
+        //Get Methods:
+        //--------------
+
+        /// <summary>
+        /// Get the coordinates (both x and y) of the square's location.
+        /// </summary>
+        /// <returns></returns>
+        public int[] GetCoordinates()
+        {
+            int[] coords = {this.x,this.y};
+            return coords;
+        }
+
+        /// <summary>
+        /// Get the x-axis coordinate of the square's location.
+        /// </summary>
+        /// <returns></returns>
+        public int GetX()
+        {
+            return this.x;
+        }
+
+        /// <summary>
+        /// Get the y-axis coordinate of the square's location.
+        /// </summary>
+        /// <returns></returns>
+        public int GetY()
+        {
+            return this.y;
+        }
     }
 }

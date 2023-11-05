@@ -90,5 +90,14 @@ namespace MonopolyApp
         {
             players.Add(player);
         }
+
+        /// <summary>
+        /// Removes a player from the list of current players using the board.
+        /// </summary>
+        /// <param name="player"></param>
+        public void RemovePlayer(Player player)
+        {
+            this.players.Remove(player);
+        }
     }
 }
