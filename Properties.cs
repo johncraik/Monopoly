@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MonopolyApp
 {
-    internal class Properties
+    internal class Properties : Squares
     {
     }
 }
