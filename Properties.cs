@@ -43,5 +43,62 @@ namespace MonopolyApp
             this.baseRent = baseRent;
             this.mortgaged = mortgaged;
         }
+
+
+        //Get Methods:
+        //--------------
+
+        /// <summary>
+        /// Gets the name of the property.
+        /// </summary>
+        /// <returns></returns>
+        public string GetName()
+        {
+            return this.name;
+        }
+
+        /// <summary>
+        /// Get the player owning the property.
+        /// </summary>
+        /// <returns>Returns null if no player owns this property.</returns>
+        public Player? GetPlayer()
+        {
+            return this.player;
+        }
+
+        /// <summary>
+        /// Get the cost of the property.
+        /// </summary>
+        /// <returns></returns>
+        public int GetCost()
+        {
+            return this.cost;
+        }
+
+        /// <summary>
+        /// Get the base rent cost of the property.
+        /// </summary>
+        /// <returns></returns>
+        public int GetBaseRent()
+        {
+            return this.baseRent;
+        }
+
+        /// <summary>
+        /// Get the mortgaged status of the property.
+        /// </summary>
+        /// <returns>True if mortgaged, false if not.</returns>
+        public bool GetMorgaged()
+        {
+            return this.mortgaged;
+        }
+
+
+        //Set Methods:
+        //--------------
+        public void SetMorgaged(bool mortgaged)
+        {
+            this.mortgaged = mortgaged;
+        }
     }
 }
