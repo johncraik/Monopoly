@@ -81,8 +81,15 @@ namespace MonopolyApp
         /// </summary>
         /// <param name="propNmae"></param>
         /// <returns></returns>
-        public Properties GetOwnedProperty(string propNmae)
+        public Properties? GetOwnedProperty(Properties property)
         {
+            foreach(Properties p in this.owned)
+            {
+                if(p.GetName() == property.GetName())
+                {
+                    return p;
+                }
+            }
             return null;
         }
 
