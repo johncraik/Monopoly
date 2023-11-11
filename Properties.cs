@@ -31,17 +31,15 @@ namespace MonopolyApp
         /// <param name="y">The y-axis coordinate of the property.</param>
         /// <param name="colour">The colour of the property</param>
         /// <param name="name">The name of the property.</param>
-        /// <param name="player">The player owning the property.</param>
         /// <param name="cost">The cost to buy the property.</param>
         /// <param name="baseRent">The base rent of the property.</param>
-        /// <param name="mortgaged">Whether the property is mortgaged or not.</param>
-        public Properties(Board board, int x, int y, string colour, string name, Player player, int cost, int baseRent, bool mortgaged):base(board, x, y, colour)
+        public Properties(Board board, int x, int y, string colour, string name, int cost, int baseRent):base(board, x, y, colour)
         {
             this.name = name;
-            this.player = player;
+            this.player = null;
             this.cost = cost;
             this.baseRent = baseRent;
-            this.mortgaged = mortgaged;
+            this.mortgaged = false;
         }
 
 
